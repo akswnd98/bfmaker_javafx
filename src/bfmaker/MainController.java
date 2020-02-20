@@ -27,6 +27,10 @@ public class MainController {
             courseListView.getSelectionModel().clearSelection();
             updateCourseListView();
         }));
+        subjListView.getSelectionModel().selectedIndexProperty().addListener(((observable, oldValue, newValue) -> {
+            courseListView.getSelectionModel().clearSelection();
+            updateCourseListView();
+        }));
         subjListView.setCellFactory(listView -> {
             return new ListCell<String>() {
                 String prevValue;
@@ -80,6 +84,9 @@ public class MainController {
             };
         });
         courseListView.getSelectionModel().selectedItemProperty().addListener(((observable, oldValue, newValue) -> {
+            updateCourseTableView();
+        }));
+        courseListView.getSelectionModel().selectedIndexProperty().addListener(((observable, oldValue, newValue) -> {
             updateCourseTableView();
         }));
         courseListView.setCellFactory(listView -> {
