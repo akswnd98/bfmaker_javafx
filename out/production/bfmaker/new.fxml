@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bfmaker.NewController">
+   <children>
+      <TextField fx:id="maxDayTextField" layoutX="149.0" layoutY="14.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <TextField fx:id="maxTimeTextField" layoutX="106.0" layoutY="81.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+      <ButtonBar layoutX="268.0" layoutY="239.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#onCancelAction" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#onOkAction" text="Ok" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="28.0" layoutY="29.0" text="max day" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="14.0" />
+      <Label layoutX="230.0" layoutY="-73.0" text="Label" />
+      <Label layoutX="18.0" layoutY="50.0" text="max time" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="54.0" />
+   </children>
+</AnchorPane>

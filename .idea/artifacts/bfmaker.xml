@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="bfmaker">
+    <output-path>$PROJECT_DIR$/out/artifacts/bfmaker</output-path>
+    <root id="root">
+      <element id="archive" name="bfmaker.jar">
+        <element id="module-output" name="bfmaker" />
+      </element>
+    </root>
+  </artifact>
+</component>
